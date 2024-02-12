@@ -57,5 +57,15 @@ public class Vehicule {
         }
         return "Le vehicule est de type: " + vehicule;
         }
+    public String plus_rapide ( Vehicule vroum) {
+        if ( this.vitesse < vroum.get_vitesse()) {
+            return vroum.get_nom() + " " + vroum.get_vitesse();
+        } else {
+            return this.get_nom() + " " + this.get_vitesse();
+        }
     }
+
+    }
+
+
 

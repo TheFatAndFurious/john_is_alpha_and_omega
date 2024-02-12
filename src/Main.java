@@ -42,6 +42,11 @@ public class Main {
             System.out.println(j.get_nom() + " atteint maintenant la vitesse de " + j.get_vitesse());
         }
 
+        System.out.println("le vehicule le plus rapide est : " + porshe.plus_rapide(fiat));
+        System.out.println("le vehicule le plus rapide est : " + fiat.plus_rapide(ducatti));
+        System.out.println("le vehicule le plus rapide est : " + ducatti.plus_rapide(porshe));
+
+
 //        Exemple test = new Exemple();
 //        Exemple test_2 = new Exemple("Baro", "Mathieu");
 //        System.out.println(test_2.nom + " " +  test_2.prenom);
