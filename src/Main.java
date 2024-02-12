@@ -1,5 +1,5 @@
-import com.poo.classe.Habitation;
-import com.poo.classe.Vehicule;
+import com.poo.classe.*;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
@@ -46,6 +46,33 @@ public class Main {
         System.out.println("le vehicule le plus rapide est : " + fiat.plus_rapide(ducatti));
         System.out.println("le vehicule le plus rapide est : " + ducatti.plus_rapide(porshe));
 
+        Personnage Jonhatan = new Personnage("John", 100, 2, 5);
+        Personnage MathieuPHP = new Personnage( "Matt", 100, 30, 5);
+
+        System.out.println(Jonhatan.get_vie());
+
+        MathieuPHP.attaquer(Jonhatan);
+
+        System.out.println(Jonhatan.get_vie());
+
+        Personnage Babakar = new Assassin("Babakar", 100, 15, 5, 10);
+
+        Personnage Abdoul = new Guerrier("Abdoul", 100, 8, 10, 10);
+
+//        for (int I = 0; I < 150; I++) {
+//            Babakar.attaquer(Jonhatan);
+//            System.out.println(Jonhatan.get_vie());
+//            Jonhatan.set_vie(100);
+//        }
+
+//        for (int I = 0; I < 150; I++) {
+//            Abdoul.attaquer(Jonhatan);
+//            System.out.println(Abdoul.get_vie());
+//            Abdoul.set_vie(100);
+//        }
+
+        Partie nouvelle = new Partie(Babakar, Abdoul, 20);
+        System.out.println(nouvelle.lancer_partie());
 
 //        Exemple test = new Exemple();
 //        Exemple test_2 = new Exemple("Baro", "Mathieu");
