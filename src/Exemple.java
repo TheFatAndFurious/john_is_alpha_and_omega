@@ -15,4 +15,6 @@ public class Exemple {
     public void set_last_name(String last_name) {
         this.nom = last_name;
     }
+
+
 }
